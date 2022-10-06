@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS général , all devices */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212deg, 45%, 89%);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: hsl(218deg, 44%, 22%);
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 30px;
+  color: hsl(220deg, 15%, 55%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 411px;
+  height: 638px;
+  border: none;
+  border-radius: 28px;
+  padding: 30px;
+  margin: 30px;
+}
+
+.card-top {
+  border: none;
+  border-radius: 13px;
+  width: 368px;
+  height: 368px;
+  overflow: hidden;
+  margin-top: -15px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* CSS Mobile */
+@media screen and (min-width: 375px) {
+  .card {
+    width: 319px;
+    height: 499px;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 30px;
+  }
+  .card-top {
+    border-radius: 10px;
+    width: 285px;
+    height: 285px;
+    margin-top: -15px;
+  }
+  .card-img {
+    width: 285px;
+    height: 285px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15.5px;
+  }
+}/*# sourceMappingURL=styles.css.map */
